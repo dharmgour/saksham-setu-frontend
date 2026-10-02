@@ -8,7 +8,7 @@ const Lipsing = ({ language }) => {
     const fetchLipsingContent = async () => {
       try {
         const response = await fetch(
-          "http://localhost:5000/api/speech/lisping"
+          "https://saksham-setu-backend.onrender.com/api/speech/lisping"
         );
 
         if (!response.ok) {

@@ -8,7 +8,7 @@ const CerebralPalsy = ({ language = "en" }) => {
     const fetchCerebralPalsyContent = async () => {
       try {
         const response = await fetch(
-          "http://localhost:5000/api/mobility/cerebral-palsy"
+          "https://saksham-setu-backend.onrender.com/api/mobility/cerebral-palsy"
         );
 
         if (!response.ok) {

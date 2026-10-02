@@ -8,7 +8,7 @@ const Cataract = ({ language = "en" }) => {
     const fetchCataractContent = async () => {
       try {
         const response = await fetch(
-          "http://localhost:5000/api/visual/cataract"
+          "https://saksham-setu-backend.onrender.com/api/visual/cataract"
         );
 
         if (!response.ok) {

@@ -8,7 +8,7 @@ const SpinalCordInjury = ({ language = "en" }) => {
     const fetchSpinalCordInjuryContent = async () => {
       try {
         const response = await fetch(
-          "http://localhost:5000/api/mobility/spinal-cord-injury"
+          "https://saksham-setu-backend.onrender.com/api/mobility/spinal-cord-injury"
         );
 
         if (!response.ok) {

@@ -8,7 +8,7 @@ const SensorineuralHearingLoss = ({ language = "en" }) => {
     const fetchSensorineuralContent = async () => {
       try {
         const response = await fetch(
-          "http://localhost:5000/api/hearing/sensorineural-hearing-loss"
+          "https://saksham-setu-backend.onrender.com/api/hearing/sensorineural-hearing-loss"
         );
 
         if (!response.ok) {

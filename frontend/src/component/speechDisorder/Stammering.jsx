@@ -6,7 +6,7 @@ const Stammering = ({ language }) => {
   const [error, setError] = useState("");
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/speech/stammering")
+    fetch("https://saksham-setu-backend.onrender.com/api/speech/stammering")
       .then((response) => {
         if (!response.ok) {
           throw new Error("Failed to fetch content");

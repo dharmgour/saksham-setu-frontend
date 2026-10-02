@@ -8,7 +8,7 @@ const MultipleSclerosis = ({ language = "en" }) => {
     const fetchMultipleSclerosisContent = async () => {
       try {
         const response = await fetch(
-          "http://localhost:5000/api/mobility/multiple-sclerosis"
+          "https://saksham-setu-backend.onrender.com/api/mobility/multiple-sclerosis"
         );
 
         if (!response.ok) {

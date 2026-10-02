@@ -8,7 +8,7 @@ const Glaucoma = ({ language = "en" }) => {
     const fetchGlaucomaContent = async () => {
       try {
         const response = await fetch(
-          "http://localhost:5000/api/visual/glaucoma"
+          "https://saksham-setu-backend.onrender.com/api/visual/glaucoma"
         );
 
         if (!response.ok) {

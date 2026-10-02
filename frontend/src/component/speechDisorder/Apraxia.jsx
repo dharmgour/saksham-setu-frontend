@@ -8,7 +8,7 @@ const Apraxia = ({ language }) => {
     const fetchApraxiaContent = async () => {
       try {
         const response = await fetch(
-          "http://localhost:5000/api/speech/apraxia"
+          "https://saksham-setu-backend.onrender.com/api/speech/apraxia"
         );
 
         if (!response.ok) {

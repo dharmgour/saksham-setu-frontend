@@ -8,7 +8,7 @@ const MacularDegeneration = ({ language = "en" }) => {
     const fetchMacularDegenerationContent = async () => {
       try {
         const response = await fetch(
-          "http://localhost:5000/api/visual/macular-degeneration"
+          "https://saksham-setu-backend.onrender.com/api/visual/macular-degeneration"
         );
 
         if (!response.ok) {

@@ -8,7 +8,7 @@ const VoiceDisorders = ({ language }) => {
     const fetchVoiceDisordersContent = async () => {
       try {
         const response = await fetch(
-          "http://localhost:5000/api/speech/voice-disorders"
+          "https://saksham-setu-backend.onrender.com/api/speech/voice-disorders"
         );
 
         if (!response.ok) {

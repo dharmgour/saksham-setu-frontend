@@ -8,7 +8,7 @@ const DiabeticRetinopathy = ({ language = "en" }) => {
     const fetchDiabeticRetinopathyContent = async () => {
       try {
         const response = await fetch(
-          "http://localhost:5000/api/visual/diabetic-retinopathy"
+          "https://saksham-setu-backend.onrender.com/api/visual/diabetic-retinopathy"
         );
 
         if (!response.ok) {

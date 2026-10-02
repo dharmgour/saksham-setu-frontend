@@ -8,7 +8,7 @@ const Blindness = ({ language = "en" }) => {
     const fetchBlindnessContent = async () => {
       try {
         const response = await fetch(
-          "http://localhost:5000/api/visual/blindness"
+          "https://saksham-setu-backend.onrender.com/api/visual/blindness"
         );
 
         if (!response.ok) {

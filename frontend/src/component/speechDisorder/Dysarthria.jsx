@@ -8,7 +8,7 @@ const Dysarthria = ({ language }) => {
     const fetchDysarthriaContent = async () => {
       try {
         const response = await fetch(
-          "http://localhost:5000/api/speech/dysarthria"
+          "https://saksham-setu-backend.onrender.com/api/speech/dysarthria"
         );
 
         if (!response.ok) {

@@ -8,7 +8,7 @@ const MixedHearingLoss = ({ language = "en" }) => {
     const fetchMixedContent = async () => {
       try {
         const response = await fetch(
-          "http://localhost:5000/api/hearing/mixed-hearing-loss"
+          "https://saksham-setu-backend.onrender.com/api/hearing/mixed-hearing-loss"
         );
 
         if (!response.ok) {

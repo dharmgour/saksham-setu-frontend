@@ -8,7 +8,7 @@ const DownSyndrome = ({ language = "en" }) => {
     const fetchDownSyndromeContent = async () => {
       try {
         const response = await fetch(
-          "http://localhost:5000/api/intellectual/down-syndrome"
+          "https://saksham-setu-backend.onrender.com/api/intellectual/down-syndrome"
         );
 
         if (!response.ok) {

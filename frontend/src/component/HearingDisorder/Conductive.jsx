@@ -8,7 +8,7 @@ const ConductiveHearingLoss = ({ language = "en" }) => {
     const fetchConductiveContent = async () => {
       try {
         const response = await fetch(
-          "http://localhost:5000/api/hearing/conductive-hearing-loss"
+          "https://saksham-setu-backend.onrender.com/api/hearing/conductive-hearing-loss"
         );
 
         if (!response.ok) {

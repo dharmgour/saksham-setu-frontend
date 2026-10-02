@@ -8,7 +8,7 @@ const LowVision = ({ language = "en" }) => {
     const fetchLowVisionContent = async () => {
       try {
         const response = await fetch(
-          "http://localhost:5000/api/visual/low-vision"
+          "https://saksham-setu-backend.onrender.com/api/visual/low-vision"
         );
 
         if (!response.ok) {

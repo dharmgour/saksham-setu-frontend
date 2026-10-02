@@ -8,7 +8,7 @@ const FragileXSyndrome = ({ language = "en" }) => {
     const fetchFragileXSyndromeContent = async () => {
       try {
         const response = await fetch(
-          "http://localhost:5000/api/intellectual/fragile-x-syndrome"
+          "https://saksham-setu-backend.onrender.com/api/intellectual/fragile-x-syndrome"
         );
 
         if (!response.ok) {
