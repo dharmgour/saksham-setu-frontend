@@ -1,0 +1,300 @@
+/* ==========================================
+   SPEECH TYPE NAVIGATION
+========================================== */
+
+.speech-type-section {
+    width: 100%;
+    padding: 0 8% 50px;
+    background: #FFFFFF;
+}
+
+.speech-type-list {
+    width: 100%;
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    display: flex;
+    align-items: stretch;
+
+    border: 1px solid #E2E8F0;
+    border-radius: 60px 60px 0 0;
+
+    overflow: hidden;
+
+    background: #FFFFFF;
+}
+
+
+/* ==========================================
+   SPEECH TYPE BUTTONS
+========================================== */
+
+.speech-type-btn {
+    flex: 1;
+
+    min-height: 58px;
+
+    padding: 16px 18px;
+
+    border: none;
+    border-right: 1px solid #E2E8F0;
+
+    background: #FFFFFF;
+
+    color: #1E293B;
+
+    font-size: 15px;
+    font-weight: 500;
+
+    cursor: pointer;
+
+    position: relative;
+
+    transition: 0.3s ease;
+}
+
+.speech-type-btn:last-child {
+    border-right: none;
+}
+
+.speech-type-btn:hover {
+    background: #F8FAFC;
+    color: #2563EB;
+}
+
+
+/* ==========================================
+   ACTIVE SPEECH TYPE
+========================================== */
+
+.speech-type-btn.active {
+    color: #2563EB;
+    background: #FFFFFF;
+}
+
+.speech-type-btn.active::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    height: 3px;
+
+    background: #3B82F6;
+}
+
+
+/* ==========================================
+   LANGUAGE SWITCH
+========================================== */
+
+.language-switch {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 4px;
+
+    margin-top: 20px;
+}
+
+.language-btn {
+    padding: 8px 18px;
+
+    border: 1px solid #E2E8F0;
+
+    background: #FFFFFF;
+
+    color: #64748B;
+
+    font-size: 14px;
+    font-weight: 500;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+.language-btn:first-child {
+    border-radius: 8px 0 0 8px;
+}
+
+.language-btn:last-child {
+    border-radius: 0 8px 8px 0;
+}
+
+.language-btn:hover {
+    color: #2563EB;
+    border-color: #93C5FD;
+}
+
+.language-btn.active {
+    background: #2563EB;
+    border-color: #2563EB;
+    color: #FFFFFF;
+}
+
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media (max-width: 900px) {
+
+    .speech-type-section {
+        padding: 0 4% 40px;
+    }
+
+    .speech-type-list {
+        border-radius: 30px 30px 0 0;
+    }
+
+    .speech-type-btn {
+        padding: 14px 10px;
+        font-size: 13px;
+    }
+
+}
+
+
+@media (max-width: 650px) {
+
+    .speech-type-list {
+        flex-wrap: wrap;
+        border-radius: 20px;
+    }
+
+    .speech-type-btn {
+        flex: 1 1 50%;
+
+        border-bottom: 1px solid #E2E8F0;
+    }
+
+    .speech-type-btn:nth-child(2),
+    .speech-type-btn:nth-child(4) {
+        border-right: none;
+    }
+
+    .speech-type-btn:last-child {
+        flex: 1 1 100%;
+        border-right: none;
+    }
+
+}
+
+/* ==========================================
+   STAMMERING CONTENT
+========================================== */
+
+.stammering-section {
+    width: 100%;
+    padding: 40px 8% 80px;
+    background: #ffffff;
+}
+
+.stammering-container {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 50px;
+
+    align-items: start;
+}
+
+
+/* Questions */
+
+.stammering-questions {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+
+    position: sticky;
+    top: 100px;
+}
+
+.stammering-questions a {
+    color: #475569;
+    text-decoration: none;
+
+    font-size: 16px;
+    font-weight: 400;
+
+    line-height: 1.6;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+.stammering-questions a:hover {
+    color: #2563eb;
+}
+
+
+/* Answers */
+
+.stammering-answers {
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+}
+
+.stammering-answers p {
+    margin: 0;
+
+    color: #334155;
+
+    font-size: 16px;
+    font-weight: 400;
+
+    line-height: 1.8;
+}
+
+
+/* Smooth scrolling */
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* Mobile */
+
+@media (max-width: 768px) {
+
+    .stammering-section {
+        padding: 30px 20px 60px;
+    }
+
+    .stammering-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .stammering-questions {
+        position: static;
+
+        gap: 10px;
+
+        padding-bottom: 20px;
+
+        border-bottom: 1px solid #E2E8F0;
+    }
+
+    .stammering-answers {
+        gap: 35px;
+    }
+
+    .stammering-questions a,
+    .stammering-answers p {
+        font-size: 16px;
+    }
+}

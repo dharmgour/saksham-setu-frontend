@@ -1,0 +1,286 @@
+/* ===========================
+   SECTION
+=========================== */
+
+.disability-section{
+    padding:150px 8% 100px;
+    background:#F9FAFB;
+    border-top-left-radius:40px;
+border-top-right-radius:40px;
+}
+
+/* ===========================
+   HEADER
+=========================== */
+
+.section-header{
+    max-width:760px;
+    margin:0 auto 70px;
+    text-align:center;
+}
+
+.section-badge{
+
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+
+    padding:10px 22px;
+
+    border-radius:50px;
+
+    background:#EFF6FF;
+
+    color:#2563EB;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    margin-bottom:25px;
+
+}
+
+.section-header h2{
+
+    font-size:52px;
+
+    font-weight:800;
+
+    color:#0F172A;
+
+    margin-bottom:20px;
+
+}
+
+.section-header p{
+
+    font-size:18px;
+
+    line-height:1.8;
+
+    color:#64748B;
+
+}
+
+/* ===========================
+   GRID
+=========================== */
+
+.disability-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(5,1fr);
+
+    gap:25px;
+
+}
+
+/* ===========================
+   CARD
+=========================== */
+
+.disability-card{
+
+    position:relative;
+
+    background:#fff;
+
+    border-radius:24px;
+
+    padding:35px 25px;
+
+    min-height:430px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    text-align:center;
+
+    transition:.35s;
+
+    overflow:hidden;
+
+    border:1px solid #E5E7EB;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.06);
+
+}
+
+.disability-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 25px 50px rgba(0,0,0,.12);
+
+}
+
+/* Bottom Color Line */
+
+.disability-card::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    bottom:0;
+
+    width:100%;
+
+    height:5px;
+
+    background:var(--card-color);
+
+}
+
+/* ===========================
+   ICON
+=========================== */
+
+.card-icon{
+
+    width:95px;
+
+    height:95px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:42px;
+
+    margin-bottom:25px;
+
+}
+
+/* ===========================
+   TITLE
+=========================== */
+
+.disability-card h3{
+
+    font-size:30px;
+
+    font-weight:700;
+
+    margin-bottom:20px;
+
+}
+
+/* ===========================
+   DESCRIPTION
+=========================== */
+
+.disability-card p{
+
+    color:#64748B;
+
+    line-height:1.8;
+
+    font-size:16px;
+
+    margin-bottom:auto;
+
+}
+
+/* ===========================
+   BUTTON
+=========================== */
+
+.learn-btn{
+
+    margin-top:35px;
+
+    width:100%;
+
+    padding:15px;
+
+    border-radius:12px;
+
+    border:2px solid var(--card-color);
+
+    color:var(--card-color);
+
+    text-decoration:none;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.learn-btn:hover{
+
+    background:var(--card-color);
+
+    color:#fff;
+
+}
+
+/* ===========================
+   TABLET
+=========================== */
+
+@media(max-width:1200px){
+
+.disability-grid{
+
+    grid-template-columns:repeat(3,1fr);
+
+}
+
+}
+
+/* ===========================
+   MOBILE
+=========================== */
+
+@media(max-width:768px){
+
+.disability-section{
+
+    padding:90px 20px 70px;
+
+}
+
+.section-header{
+
+    margin-bottom:50px;
+
+}
+
+.section-header h2{
+
+    font-size:34px;
+
+}
+
+.section-header p{
+
+    font-size:16px;
+
+}
+
+.disability-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+.disability-card{
+
+    min-height:auto;
+
+}
+
+}

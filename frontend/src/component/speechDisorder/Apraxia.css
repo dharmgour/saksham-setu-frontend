@@ -1,0 +1,139 @@
+.apraxia-section {
+  width: 100%;
+  padding: 50px 8%;
+  background: #ffffff;
+}
+
+.apraxia-container {
+  max-width: 1200px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 280px 1fr;
+
+  gap: 0;
+}
+
+/* Questions */
+
+.apraxia-questions {
+  padding-right: 30px;
+}
+
+.apraxia-questions a {
+  display: block;
+
+  padding: 7px 0;
+
+  color: #475569;
+  text-decoration: none;
+
+  font-size: 16px;
+  line-height: 1.5;
+
+  transition: 0.2s;
+}
+
+.apraxia-questions a:hover {
+  color: #2563eb;
+}
+
+/* Answers */
+
+.apraxia-answers {
+  border-left: 1px solid #e2e8f0;
+  padding-left: 35px;
+}
+
+/* Main Answer */
+
+.apraxia-answer-item {
+  margin-bottom: 60px;
+  scroll-margin-top: 30px;
+}
+
+/* Main Question Heading */
+
+.apraxia-answer-item h2 {
+  margin: 0 0 20px;
+
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.4;
+
+  color: #1f2937;
+}
+
+/* Paragraph */
+
+.apraxia-answer-item p {
+  margin: 0 0 28px;
+
+  color: #334155;
+
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+/* Sub Sections */
+
+.apraxia-content-section {
+  margin-bottom: 28px;
+}
+
+/* Sub Heading */
+
+.apraxia-content-section h3 {
+  margin: 0 0 12px;
+
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.5;
+
+  color: #334155;
+}
+
+/* Smooth Scroll */
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+  .apraxia-section {
+    padding: 35px 20px;
+  }
+
+  .apraxia-container {
+    grid-template-columns: 1fr;
+  }
+
+  .apraxia-questions {
+    padding-right: 0;
+    padding-bottom: 20px;
+  }
+
+  .apraxia-answers {
+    border-left: none;
+
+    border-top: 1px solid #e2e8f0;
+
+    padding-left: 0;
+    padding-top: 25px;
+  }
+
+  .apraxia-answer-item h2 {
+    font-size: 22px;
+  }
+
+  .apraxia-content-section h3 {
+    font-size: 17px;
+  }
+
+  .apraxia-answer-item p {
+    font-size: 15px;
+    line-height: 1.7;
+  }
+}

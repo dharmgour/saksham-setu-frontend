@@ -1,0 +1,191 @@
+/* ==========================================
+   HEARING TYPE NAVIGATION
+========================================== */
+
+.hearing-type-section {
+    width: 100%;
+    padding: 0 8% 50px;
+    background: #FFFFFF;
+}
+
+.hearing-type-list {
+    width: 100%;
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    display: flex;
+    align-items: stretch;
+
+    border: 1px solid #E2E8F0;
+    border-radius: 60px 60px 0 0;
+
+    overflow: hidden;
+
+    background: #FFFFFF;
+}
+
+
+/* ==========================================
+   HEARING TYPE BUTTONS
+========================================== */
+
+.hearing-type-btn {
+    flex: 1;
+
+    min-height: 58px;
+    height: 58px;
+
+    padding: 16px 18px;
+
+    border: none;
+    border-right: 1px solid #E2E8F0;
+
+    background: #FFFFFF;
+
+    color: #1E293B;
+
+    font-size: 15px;
+    font-weight: 500;
+
+    cursor: pointer;
+
+    position: relative;
+
+    transition: 0.3s ease;
+}
+
+.hearing-type-btn:last-child {
+    border-right: none;
+}
+
+.hearing-type-btn:hover {
+    background: #F8FAFC;
+    color: #2563EB;
+}
+
+
+/* ==========================================
+   ACTIVE HEARING TYPE
+========================================== */
+
+.hearing-type-btn.active {
+    color: #2563EB;
+    background: #FFFFFF;
+}
+
+.hearing-type-btn.active::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    height: 3px;
+
+    background: #3B82F6;
+}
+
+
+/* ==========================================
+   LANGUAGE SWITCH
+========================================== */
+
+.hearing-language-switch {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 4px;
+
+    margin-top: 20px;
+}
+
+.hearing-language-btn {
+    padding: 8px 18px;
+
+    border: 1px solid #E2E8F0;
+
+    background: #FFFFFF;
+
+    color: #64748B;
+
+    font-size: 14px;
+    font-weight: 500;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+.hearing-language-btn:first-child {
+    border-radius: 8px 0 0 8px;
+}
+
+.hearing-language-btn:last-child {
+    border-radius: 0 8px 8px 0;
+}
+
+.hearing-language-btn:hover {
+    color: #2563EB;
+    border-color: #93C5FD;
+}
+
+.hearing-language-btn.active {
+    background: #2563EB;
+    border-color: #2563EB;
+
+    color: #FFFFFF;
+}
+
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media (max-width: 900px) {
+
+    .hearing-type-section {
+        padding: 0 4% 40px;
+    }
+
+    .hearing-type-list {
+        border-radius: 30px 30px 0 0;
+    }
+
+    .hearing-type-btn {
+        padding: 14px 10px;
+        font-size: 13px;
+    }
+
+}
+
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width: 650px) {
+
+    .hearing-type-list {
+        flex-wrap: wrap;
+
+        border-radius: 20px;
+    }
+
+    .hearing-type-btn {
+        flex: 1 1 100%;
+
+        height: 58px;
+
+        border-bottom: 1px solid #E2E8F0;
+    }
+
+    .hearing-type-btn:last-child {
+        border-right: none;
+    }
+
+}

@@ -1,0 +1,479 @@
+/* ==========================================
+   UDID CARD SECTION
+========================================== */
+
+.udid-card-section{
+
+    padding:120px 8%;
+
+    background:#F8FAFC;
+
+}
+
+/* ==========================================
+   MAIN HEADER
+========================================== */
+
+.udid-card-header{
+
+    max-width:850px;
+
+    margin:auto;
+
+    text-align:center;
+
+}
+
+.udid-card-badge{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    padding:10px 22px;
+
+    border-radius:50px;
+
+    background:#EAF2FF;
+
+    color:#2563EB;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    margin-bottom:25px;
+
+}
+
+.udid-card-header h2{
+
+    font-size:52px;
+
+    font-weight:800;
+
+    color:#0F172A;
+
+    line-height:1.2;
+
+}
+
+.udid-card-header h2 span{
+
+    color:#2563EB;
+
+}
+
+.udid-card-header p{
+
+    margin-top:20px;
+
+    font-size:18px;
+
+    color:#64748B;
+
+    line-height:1.8;
+
+}
+
+/* ==========================================
+   INFO CONTAINER
+========================================== */
+
+.udid-info-container{
+
+    max-width:950px;
+
+    margin:70px auto 0;
+
+}
+
+/* ==========================================
+   INFO HEADER
+========================================== */
+
+.udid-info-header{
+
+    max-width:850px;
+
+    margin:auto;
+
+    text-align:center;
+
+}
+
+.udid-info-badge{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    padding:10px 22px;
+
+    border-radius:50px;
+
+    background:#EAF2FF;
+
+    color:#2563EB;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    margin-bottom:20px;
+
+}
+
+.udid-info-header h2{
+
+    font-size:38px;
+
+    font-weight:800;
+
+    color:#0F172A;
+
+    margin-bottom:15px;
+
+}
+
+.udid-info-header p{
+
+    font-size:17px;
+
+    color:#64748B;
+
+    line-height:1.8;
+
+}
+
+/* ==========================================
+   INFO CARD
+========================================== */
+
+.udid-info-card{
+
+    margin-top:35px;
+
+    background:#FFFFFF;
+
+    border:1px solid #E5E7EB;
+
+    border-radius:22px;
+
+    padding:15px 30px;
+
+}
+
+/* ==========================================
+   INFO ITEM
+========================================== */
+
+.udid-info-item{
+
+    display:flex;
+
+    align-items:flex-start;
+
+    gap:15px;
+
+    padding:18px 5px;
+
+    border-bottom:1px solid #E5E7EB;
+
+}
+
+.udid-info-item:last-child{
+
+    border-bottom:none;
+
+}
+
+.udid-check{
+
+    width:30px;
+
+    height:30px;
+
+    min-width:30px;
+
+    border-radius:50%;
+
+    background:#EAF2FF;
+
+    color:#2563EB;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:15px;
+
+    font-weight:700;
+
+}
+
+.udid-info-item p{
+
+    margin:3px 0 0;
+
+    font-size:16px;
+
+    color:#64748B;
+
+    line-height:1.7;
+
+}
+
+/* ==========================================
+   PROCESS
+========================================== */
+
+.udid-process-container{
+
+    max-width:950px;
+
+    margin:90px auto 0;
+
+}
+
+/* ==========================================
+   TIMELINE
+========================================== */
+
+.udid-timeline{
+
+    margin-top:60px;
+
+}
+
+.udid-timeline-item{
+
+    display:flex;
+
+    align-items:flex-start;
+
+    gap:30px;
+
+    position:relative;
+
+    padding-bottom:35px;
+
+}
+
+.udid-timeline-item:last-child{
+
+    padding-bottom:0;
+
+}
+
+.udid-timeline-item::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:22px;
+
+    top:50px;
+
+    width:2px;
+
+    height:100%;
+
+    background:#DBEAFE;
+
+}
+
+.udid-timeline-item:last-child::before{
+
+    display:none;
+
+}
+
+.udid-timeline-number{
+
+    width:46px;
+
+    height:46px;
+
+    border-radius:50%;
+
+    background:#2563EB;
+
+    color:#FFFFFF;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:16px;
+
+    font-weight:700;
+
+    flex-shrink:0;
+
+    z-index:2;
+
+}
+
+.udid-timeline-content{
+
+    flex:1;
+
+    padding-bottom:12px;
+
+    border-bottom:1px solid #E5E7EB;
+
+}
+
+.udid-timeline-content h3{
+
+    font-size:24px;
+
+    color:#0F172A;
+
+    margin-bottom:10px;
+
+}
+
+.udid-timeline-content p{
+
+    font-size:16px;
+
+    color:#64748B;
+
+    line-height:1.8;
+
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media(max-width:768px){
+
+    .udid-card-section{
+
+        padding:90px 20px;
+
+    }
+
+    .udid-card-header h2{
+
+        font-size:34px;
+
+    }
+
+    .udid-card-header p{
+
+        font-size:16px;
+
+    }
+
+    .udid-info-container{
+
+        margin-top:55px;
+
+    }
+
+    .udid-info-header h2{
+
+        font-size:30px;
+
+    }
+
+    .udid-info-header p{
+
+        font-size:16px;
+
+    }
+
+    .udid-info-card{
+
+        padding:15px 20px;
+
+    }
+
+    .udid-info-item{
+
+        gap:12px;
+
+    }
+
+    .udid-info-item p{
+
+        font-size:15px;
+
+    }
+
+    .udid-timeline{
+
+        margin-top:45px;
+
+    }
+
+    .udid-timeline-item{
+
+        gap:20px;
+
+    }
+
+    .udid-timeline-number{
+
+        width:40px;
+
+        height:40px;
+
+        font-size:14px;
+
+    }
+
+    .udid-timeline-content h3{
+
+        font-size:20px;
+
+    }
+
+    .udid-timeline-content p{
+
+        font-size:15px;
+
+    }
+
+}
+
+@media(max-width:480px){
+
+    .udid-card-header h2{
+
+        font-size:30px;
+
+    }
+
+    .udid-info-header h2{
+
+        font-size:27px;
+
+    }
+
+    .udid-info-card{
+
+        padding:10px 15px;
+
+    }
+
+    .udid-info-item{
+
+        padding:15px 2px;
+
+    }
+
+}

@@ -1,0 +1,8 @@
+.content-link {
+    color: #2563EB;
+    text-decoration: none;
+}
+
+.content-link:hover {
+    text-decoration: underline;
+}

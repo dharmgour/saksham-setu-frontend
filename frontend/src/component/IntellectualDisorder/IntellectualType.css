@@ -1,0 +1,196 @@
+/* ==========================================
+   INTELLECTUAL TYPE NAVIGATION
+========================================== */
+
+.intellectual-type-section {
+    width: 100%;
+    padding: 0 8% 50px;
+    background: #FFFFFF;
+}
+
+.intellectual-type-list {
+    width: 100%;
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    display: flex;
+    align-items: stretch;
+
+    border: 1px solid #E2E8F0;
+    border-radius: 60px 60px 0 0;
+
+    overflow: hidden;
+
+    background: #FFFFFF;
+}
+
+
+/* ==========================================
+   INTELLECTUAL TYPE BUTTONS
+========================================== */
+
+.intellectual-type-btn {
+    flex: 1;
+
+    min-height: 58px;
+    height: 58px;
+
+    padding: 16px 18px;
+
+    border: none;
+    border-right: 1px solid #E2E8F0;
+
+    background: #FFFFFF;
+
+    color: #1E293B;
+
+    font-size: 15px;
+    font-weight: 500;
+
+    cursor: pointer;
+
+    position: relative;
+
+    transition: 0.3s ease;
+}
+
+.intellectual-type-btn:last-child {
+    border-right: none;
+}
+
+.intellectual-type-btn:hover {
+    background: #F8FAFC;
+    color: #2563EB;
+}
+
+
+/* ==========================================
+   ACTIVE INTELLECTUAL TYPE
+========================================== */
+
+.intellectual-type-btn.active {
+    color: #2563EB;
+    background: #FFFFFF;
+}
+
+.intellectual-type-btn.active::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    height: 3px;
+
+    background: #3B82F6;
+}
+
+
+/* ==========================================
+   LANGUAGE SWITCH
+========================================== */
+
+.intellectual-language-switch {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 4px;
+
+    margin-top: 20px;
+}
+
+.intellectual-language-btn {
+    padding: 8px 18px;
+
+    border: 1px solid #E2E8F0;
+
+    background: #FFFFFF;
+
+    color: #64748B;
+
+    font-size: 14px;
+    font-weight: 500;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+.intellectual-language-btn:first-child {
+    border-radius: 8px 0 0 8px;
+}
+
+.intellectual-language-btn:last-child {
+    border-radius: 0 8px 8px 0;
+}
+
+.intellectual-language-btn:hover {
+    color: #2563EB;
+    border-color: #93C5FD;
+}
+
+.intellectual-language-btn.active {
+    background: #2563EB;
+    border-color: #2563EB;
+
+    color: #FFFFFF;
+}
+
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media (max-width: 900px) {
+
+    .intellectual-type-section {
+        padding: 0 4% 40px;
+    }
+
+    .intellectual-type-list {
+        border-radius: 30px 30px 0 0;
+    }
+
+    .intellectual-type-btn {
+        padding: 14px 10px;
+        font-size: 13px;
+    }
+
+}
+
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width: 650px) {
+
+    .intellectual-type-list {
+        flex-wrap: wrap;
+
+        border-radius: 20px;
+    }
+
+    .intellectual-type-btn {
+        flex: 1 1 50%;
+
+        height: 58px;
+
+        border-bottom: 1px solid #E2E8F0;
+    }
+
+    .intellectual-type-btn:nth-child(2),
+    .intellectual-type-btn:nth-child(4) {
+        border-right: none;
+    }
+
+    .intellectual-type-btn:last-child {
+        border-right: none;
+    }
+
+}

@@ -1,0 +1,170 @@
+/* ==========================================
+   FRAGILE X SYNDROME SECTION
+========================================== */
+
+.fragile-x-syndrome-section {
+  width: 100%;
+  background: #ffffff;
+}
+
+
+/* ==========================================
+   MAIN CONTAINER
+========================================== */
+
+.fragile-x-syndrome-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  min-height: 700px;
+}
+
+
+/* ==========================================
+   QUESTIONS / LEFT SIDEBAR
+========================================== */
+
+.fragile-x-syndrome-questions {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  padding: 40px 20px;
+  border-right: 1px solid #e5e7eb;
+  background: #ffffff;
+}
+
+
+.fragile-x-syndrome-questions a {
+  color: #475569;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 10px 8px;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+
+
+.fragile-x-syndrome-questions a:hover {
+  color: #2563eb;
+  background: #ffffff;
+}
+
+
+/* ==========================================
+   ANSWERS / RIGHT CONTENT
+========================================== */
+
+.fragile-x-syndrome-answers {
+  width: 100%;
+  padding: 40px 45px;
+}
+
+
+/* ==========================================
+   ANSWER ITEM
+========================================== */
+
+.fragile-x-syndrome-answer-item {
+  margin-bottom: 55px;
+  scroll-margin-top: 100px;
+}
+
+
+/* ==========================================
+   MAIN HEADINGS
+========================================== */
+
+.fragile-x-syndrome-answer-item h2 {
+  font-size: 28px;
+  font-weight: 600;
+  color: #334155;
+  margin: 0 0 20px 0;
+  line-height: 1.3;
+}
+
+
+/* ==========================================
+   PARAGRAPHS
+========================================== */
+
+.fragile-x-syndrome-answer-item p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #475569;
+  margin: 0 0 18px 0;
+}
+
+
+/* ==========================================
+   BOLD TEXT
+========================================== */
+
+.fragile-x-syndrome-answer-item p strong {
+  color: #334155;
+  font-weight: 600;
+}
+
+
+/* ==========================================
+   LINKS
+========================================== */
+
+.fragile-x-syndrome-answer-item .content-link {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+
+.fragile-x-syndrome-answer-item .content-link:hover {
+  text-decoration: underline;
+}
+
+
+/* ==========================================
+   CONTENT IMAGE
+========================================== */
+
+.fragile-x-syndrome-content-image {
+  display: block;
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  max-height: 450px;
+  margin: 20px auto 30px;
+  border-radius: 8px;
+  object-fit: contain;
+}
+
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media (max-width: 768px) {
+
+  .fragile-x-syndrome-container {
+    grid-template-columns: 1fr;
+  }
+
+  .fragile-x-syndrome-questions {
+    border-right: none;
+    border-bottom: 1px solid #e5e7eb;
+    padding: 20px;
+  }
+
+  .fragile-x-syndrome-answers {
+    padding: 30px 20px;
+  }
+
+  .fragile-x-syndrome-answer-item h2 {
+    font-size: 24px;
+  }
+
+  .fragile-x-syndrome-answer-item p {
+    font-size: 15px;
+  }
+
+}

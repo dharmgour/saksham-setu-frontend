@@ -1,0 +1,210 @@
+/* ===========================
+   ABOUT SECTION
+=========================== */
+
+.about-section {
+    padding: 120px 8% 90px;
+    background: #F8FAFC;
+    min-height: 100vh;
+}
+
+
+/* ===========================
+   HEADER
+=========================== */
+
+.about-header {
+    max-width: 850px;
+    margin: auto;
+    text-align: center;
+}
+
+.about-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+
+    padding: 10px 22px;
+
+    border-radius: 50px;
+
+    background: #EAF2FF;
+    color: #2563EB;
+
+    font-size: 15px;
+    font-weight: 600;
+
+    margin-bottom: 25px;
+}
+
+.about-header h1 {
+    font-size: 52px;
+    font-weight: 800;
+
+    color: #0F172A;
+
+    line-height: 1.2;
+}
+
+.about-header h1 span {
+    color: #2563EB;
+}
+
+.about-header p {
+    margin-top: 20px;
+
+    font-size: 18px;
+
+    color: #64748B;
+
+    line-height: 1.8;
+}
+
+
+/* ===========================
+   CONTENT
+=========================== */
+
+.about-content {
+    max-width: 950px;
+    margin: 70px auto 0;
+}
+
+
+/* ===========================
+   CONTENT BLOCK
+=========================== */
+
+.about-block {
+    padding: 0 0 40px;
+    margin-bottom: 40px;
+
+    border-bottom: 1px solid #E5E7EB;
+}
+
+.about-block:last-child {
+    margin-bottom: 0;
+}
+
+.about-block h2 {
+    font-size: 30px;
+
+    color: #0F172A;
+
+    margin-bottom: 15px;
+}
+
+.about-block p {
+    font-size: 16px;
+
+    color: #64748B;
+
+    line-height: 1.8;
+
+    margin-bottom: 15px;
+}
+
+.about-block p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* ===========================
+   LIST
+=========================== */
+
+.about-block ul {
+    padding-left: 22px;
+
+    margin-top: 10px;
+}
+
+.about-block li {
+    font-size: 16px;
+
+    color: #64748B;
+
+    line-height: 1.8;
+
+    margin-bottom: 14px;
+
+    list-style: disc;
+}
+
+.about-block li strong {
+    color: #0F172A;
+}
+
+
+/* ===========================
+   BOTTOM MESSAGE
+=========================== */
+
+.about-bottom {
+    max-width: 1100px;
+
+    margin: 70px auto 0;
+
+    padding: 35px 45px;
+
+    background: #EFF6FF;
+
+    border-radius: 22px;
+
+    text-align: center;
+}
+
+.about-bottom h2 {
+    font-size: 30px;
+
+    color: #0F172A;
+
+    margin-bottom: 10px;
+}
+
+.about-bottom p {
+    color: #64748B;
+
+    line-height: 1.8;
+}
+
+
+/* ===========================
+   MOBILE
+=========================== */
+
+@media (max-width: 768px) {
+
+    .about-section {
+        padding: 90px 20px 60px;
+    }
+
+    .about-header h1 {
+        font-size: 34px;
+    }
+
+    .about-header p {
+        font-size: 16px;
+    }
+
+    .about-content {
+        margin-top: 50px;
+    }
+
+    .about-block h2 {
+        font-size: 24px;
+    }
+
+    .about-block p,
+    .about-block li {
+        font-size: 15px;
+    }
+
+    .about-bottom {
+        padding: 30px 20px;
+    }
+
+    .about-bottom h2 {
+        font-size: 24px;
+    }
+}

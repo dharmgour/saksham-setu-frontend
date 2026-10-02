@@ -1,0 +1,139 @@
+.dysarthria-section {
+  width: 100%;
+  padding: 50px 8%;
+  background: #ffffff;
+}
+
+.dysarthria-container {
+  max-width: 1200px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 280px 1fr;
+
+  gap: 0;
+}
+
+/* Questions */
+
+.dysarthria-questions {
+  padding-right: 30px;
+}
+
+.dysarthria-questions a {
+  display: block;
+
+  padding: 7px 0;
+
+  color: #475569;
+  text-decoration: none;
+
+  font-size: 16px;
+  line-height: 1.5;
+
+  transition: 0.2s;
+}
+
+.dysarthria-questions a:hover {
+  color: #2563eb;
+}
+
+/* Answers */
+
+.dysarthria-answers {
+  border-left: 1px solid #e2e8f0;
+  padding-left: 35px;
+}
+
+/* Main Answer */
+
+.dysarthria-answer-item {
+  margin-bottom: 60px;
+  scroll-margin-top: 30px;
+}
+
+/* Main Question Heading */
+
+.dysarthria-answer-item h2 {
+  margin: 0 0 20px;
+
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.4;
+
+  color: #1f2937;
+}
+
+/* Paragraph */
+
+.dysarthria-answer-item p {
+  margin: 0 0 28px;
+
+  color: #334155;
+
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+/* Sub Sections */
+
+.dysarthria-content-section {
+  margin-bottom: 28px;
+}
+
+/* Sub Heading */
+
+.dysarthria-content-section h3 {
+  margin: 0 0 12px;
+
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.5;
+
+  color: #334155;
+}
+
+/* Smooth Scroll */
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+  .dysarthria-section {
+    padding: 35px 20px;
+  }
+
+  .dysarthria-container {
+    grid-template-columns: 1fr;
+  }
+
+  .dysarthria-questions {
+    padding-right: 0;
+    padding-bottom: 20px;
+  }
+
+  .dysarthria-answers {
+    border-left: none;
+
+    border-top: 1px solid #e2e8f0;
+
+    padding-left: 0;
+    padding-top: 25px;
+  }
+
+  .dysarthria-answer-item h2 {
+    font-size: 22px;
+  }
+
+  .dysarthria-content-section h3 {
+    font-size: 17px;
+  }
+
+  .dysarthria-answer-item p {
+    font-size: 15px;
+    line-height: 1.7;
+  }
+}

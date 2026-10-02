@@ -1,0 +1,629 @@
+/* ==========================================
+   NGO SECTION
+========================================== */
+
+.ngo-section{
+    padding:120px 8%;
+    background:#F8FAFC;
+}
+
+/* ==========================================
+   HEADER
+========================================== */
+
+.ngo-header{
+    max-width:850px;
+    margin:auto;
+    text-align:center;
+}
+
+.ngo-badge{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    padding:10px 22px;
+
+    border-radius:50px;
+
+    background:#EAF2FF;
+
+    color:#2563EB;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    margin-bottom:25px;
+
+}
+
+.ngo-header h2{
+
+    font-size:52px;
+
+    font-weight:800;
+
+    color:#0F172A;
+
+    line-height:1.2;
+
+}
+
+.ngo-header h2 span{
+
+    display:block;
+
+    color:#2563EB;
+
+}
+
+.ngo-header p{
+
+    margin-top:20px;
+
+    font-size:18px;
+
+    color:#64748B;
+
+    line-height:1.8;
+
+}
+
+/* ==========================================
+   SEARCH
+========================================== */
+
+.ngo-search{
+
+    width:100%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    margin:50px auto 60px;
+
+}
+
+.search-box{
+
+    width:100%;
+
+    max-width:900px;
+
+    height:64px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:14px;
+
+    padding:0 24px;
+
+    background:#fff;
+
+    border:1px solid #E5E7EB;
+
+    border-radius:18px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.05);
+
+}
+
+.search-btn{
+
+    border:none;
+
+    background:transparent;
+
+    outline:none;
+
+    box-shadow:none;
+
+    cursor:pointer;
+
+    color:#2563EB;
+
+    padding:0;
+
+}
+
+.search-btn:hover{
+
+    background:transparent;
+
+}
+
+.search-btn svg{
+
+    font-size:20px;
+
+}
+.search-icon{
+
+    font-size:22px;
+
+    color:#64748B;
+
+    flex-shrink:0;
+
+}
+
+.search-box input{
+
+    flex:1;
+
+    border:none;
+
+    outline:none;
+
+    background:transparent;
+
+    font-size:17px;
+
+}
+
+
+
+.search-box svg{
+
+    color:#64748B;
+
+    font-size:20px;
+
+}
+
+
+
+
+
+/* ==========================================
+   GRID
+========================================== */
+
+.ngo-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(5,1fr);
+
+    gap:25px;
+    margin-top:50px;
+
+}
+
+/* ==========================================
+   CARD
+========================================== */
+
+.ngo-card{
+
+    background:#fff;
+
+    border-radius:24px;
+
+    padding:30px 22px;
+
+    border:1px solid #ECECEC;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    text-align:center;
+
+    min-height:620px;
+
+    transition:.35s;
+
+    box-shadow:0 12px 30px rgba(0,0,0,.05);
+
+}
+
+.ngo-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 20px 40px rgba(0,0,0,.12);
+
+}
+
+.ngo-logo{
+
+    width:90px;
+
+    height:90px;
+
+    border-radius:50%;
+
+    border:2px solid;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    margin:auto;
+
+    margin-bottom:25px;
+
+    font-size:36px;
+
+    font-weight:700;
+
+}
+
+.ngo-card h3{
+
+    font-size:25px;
+
+    color:#0F172A;
+
+    margin-bottom:18px;
+
+}
+
+.ngo-category{
+
+    display:inline-block;
+
+    padding:8px 18px;
+
+    border-radius:50px;
+
+    font-size:14px;
+
+    font-weight:600;
+
+    margin-bottom:20px;
+
+}
+
+.ngo-location{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:8px;
+
+    color:#64748B;
+
+    font-size:15px;
+
+    margin-bottom:18px;
+
+}
+
+.ngo-card p{
+
+    color:#64748B;
+
+    line-height:1.8;
+
+    font-size:15px;
+
+    flex:1;
+
+    margin:20px 0;
+
+}
+
+.ngo-btn{
+
+    width:100%;
+
+    height:50px;
+    
+    margin-top:auto;
+
+    border:2px solid;
+
+    border-radius:12px;
+
+    background:white;
+
+    cursor:pointer;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.ngo-btn:hover{
+
+    background:var(--ngo-color);
+
+    color:white !important;
+
+}
+
+/* ==========================================
+   CTA
+========================================== */
+
+
+
+
+
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+/* ==========================================
+   TABLET
+========================================== */
+
+@media (max-width:768px){
+
+    .ngo-section{
+        padding:90px 20px;
+    }
+
+    .ngo-header h2{
+        font-size:34px;
+    }
+
+    .ngo-header p{
+        font-size:16px;
+    }
+
+    .ngo-search{
+        width:100%;
+        margin:35px auto 45px;
+    }
+
+    .search-box{
+        width:100%;
+        max-width:100%;
+        height:58px;
+        padding:0 16px;
+        border-radius:16px;
+    }
+
+    .search-box input{
+        font-size:15px;
+    }
+
+    .search-btn{
+        width:40px;
+        height:40px;
+        padding:0;
+    }
+
+    .ngo-grid{
+        grid-template-columns:1fr;
+        gap:20px;
+    }
+
+    .ngo-card{
+        min-height:auto;
+        padding:24px 18px;
+    }
+
+    .ngo-logo{
+        width:70px;
+        height:70px;
+        font-size:28px;
+    }
+
+    .ngo-card h3{
+        font-size:22px;
+    }
+
+    .ngo-card p{
+        font-size:14px;
+        line-height:1.6;
+        margin:16px 0;
+    }
+
+    .ngo-btn{
+        height:46px;
+        font-size:14px;
+    }
+
+}
+/* ===========================
+   NGO SLIDER
+=========================== */
+
+.ngo-slider-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 1300px;
+    margin: 50px auto 0;
+    padding: 0 55px;
+}
+
+
+/* ===========================
+   NGO CARDS CONTAINER
+=========================== */
+
+.ngo-grid {
+    display: flex;
+
+    gap: 25px;
+
+    width: 100%;
+
+    overflow-x: hidden;
+
+    scroll-behavior: smooth;
+
+    scrollbar-width: none;
+}
+
+.ngo-grid::-webkit-scrollbar {
+    display: none;
+}
+
+
+/* ===========================
+   NGO CARD
+=========================== */
+
+.ngo-grid .ngo-card {
+    flex: 0 0 calc((100% - 50px) / 3);
+
+    min-width: 0;
+}
+
+
+/* ===========================
+   SLIDER ARROWS
+=========================== */
+
+.ngo-arrow {
+    position: absolute;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    width: 46px;
+    height: 46px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: #FFFFFF;
+
+    color: #2563EB;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    font-size: 17px;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 8px 25px rgba(15, 23, 42, 0.14);
+
+    z-index: 5;
+
+    transition: all .3s ease;
+}
+
+.ngo-arrow:hover {
+    background: #2563EB;
+
+    color: #FFFFFF;
+
+    transform: translateY(-50%) scale(1.08);
+
+    box-shadow:
+        0 10px 28px rgba(37, 99, 235, 0.28);
+}
+
+
+/* Left */
+
+.ngo-arrow-left {
+    left: 0;
+}
+
+
+/* Right */
+
+.ngo-arrow-right {
+    right: 0;
+}
+
+
+/* ===========================
+   NO RESULT
+=========================== */
+
+.ngo-no-result {
+    width: 100%;
+
+    text-align: center;
+
+    padding: 50px 20px;
+
+    color: #64748B;
+
+    font-size: 16px;
+}
+
+
+/* ===========================
+   TABLET
+=========================== */
+
+@media (max-width: 1100px) {
+
+    .ngo-slider-wrapper {
+        padding: 0 50px;
+    }
+
+    .ngo-grid .ngo-card {
+        flex: 0 0 calc((100% - 25px) / 2);
+    }
+
+}
+
+
+/* ===========================
+   MOBILE
+=========================== */
+
+@media (max-width: 768px) {
+
+    .ngo-slider-wrapper {
+        padding: 0 42px;
+
+        margin-top: 35px;
+    }
+
+    .ngo-grid {
+        gap: 18px;
+    }
+
+    .ngo-grid .ngo-card {
+        flex: 0 0 100%;
+    }
+
+    .ngo-arrow {
+        width: 38px;
+        height: 38px;
+
+        font-size: 14px;
+    }
+
+    .ngo-arrow-left {
+        left: 0;
+    }
+
+    .ngo-arrow-right {
+        right: 0;
+    }
+
+}
+.ngo-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}

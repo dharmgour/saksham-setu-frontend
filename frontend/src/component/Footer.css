@@ -1,0 +1,361 @@
+/* ==========================================
+   FOOTER
+========================================== */
+
+.footer{
+
+    background:#0F172A;
+
+    padding:80px 8% 25px;
+
+}
+
+/* ==========================================
+   CONTAINER
+========================================== */
+
+.footer-container{
+
+    display:grid;
+
+    grid-template-columns:2fr 1fr 1fr 1fr;
+
+    gap:60px;
+
+}
+
+/* ==========================================
+   ABOUT
+========================================== */
+
+.footer-logo{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
+
+    margin-bottom:25px;
+
+}
+
+.footer-logo-img{
+
+    width:120px;
+
+    height:120px;
+
+    object-fit:contain;
+
+    flex-shrink:0;
+       background:transparent;
+
+    mix-blend-mode:normal;
+
+}
+
+.footer-logo h3{
+
+    font-size:28px;
+
+    color:#fff;
+
+    margin-bottom:6px;
+
+    font-weight:700;
+
+}
+
+.footer-logo p{
+
+    color:#94A3B8;
+
+    font-size:15px;
+
+    line-height:1.6;
+
+}
+
+.footer-description{
+
+    color:#CBD5E1;
+
+    font-size:16px;
+
+    line-height:1.9;
+
+    margin-bottom:30px;
+
+}
+
+/* ==========================================
+   SOCIAL
+========================================== */
+
+.footer-social{
+
+    display:flex;
+
+    gap:15px;
+
+}
+
+.footer-social a{
+
+    width:45px;
+
+    height:45px;
+
+    border-radius:50%;
+
+    background:#1E293B;
+
+    color:#fff;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-decoration:none;
+
+    transition:.3s;
+
+}
+
+.footer-social a:hover{
+
+    background:#2563EB;
+
+}
+
+/* ==========================================
+   LINKS
+========================================== */
+
+.footer-links h4,
+.footer-contact h4{
+
+    font-size:20px;
+
+    color:#fff;
+
+    margin-bottom:25px;
+
+}
+
+.footer-links{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+.footer-links a{
+
+    color:#CBD5E1;
+
+    text-decoration:none;
+
+    margin-bottom:16px;
+
+    transition:.3s;
+
+}
+
+.footer-links a:hover{
+
+    color:#2563EB;
+
+    padding-left:6px;
+
+}
+
+/* ==========================================
+   CONTACT
+========================================== */
+
+.contact-item{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    color:#CBD5E1;
+
+    margin-bottom:20px;
+
+    line-height:1.8;
+
+}
+
+.contact-item svg{
+
+    color:#2563EB;
+
+    font-size:18px;
+
+}
+
+/* ==========================================
+   BOTTOM
+========================================== */
+
+.footer-bottom{
+
+    margin-top:60px;
+
+    padding-top:25px;
+
+    border-top:1px solid rgba(255,255,255,.08);
+
+    text-align:center;
+
+}
+
+.footer-bottom p{
+
+    color:#94A3B8;
+
+    font-size:15px;
+
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media(max-width:992px){
+
+.footer-container{
+
+grid-template-columns:repeat(2,1fr);
+
+gap:45px;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.footer{
+
+padding:70px 20px 25px;
+
+}
+
+.footer-container{
+
+grid-template-columns:1fr;
+
+gap:45px;
+
+}
+
+.footer-logo{
+
+justify-content:center;
+
+text-align:center;
+
+}
+
+.footer-about{
+
+text-align:center;
+
+}
+
+.footer-social{
+
+justify-content:center;
+
+}
+
+.footer-links{
+
+align-items:center;
+
+}
+
+.footer-contact{
+
+text-align:center;
+
+}
+
+.contact-item{
+
+justify-content:center;
+
+}
+
+}
+.footer-nav-btn {
+    display: block;
+
+    border: none;
+    background: none;
+
+    padding: 0;
+    margin-bottom: 12px;
+
+    color: inherit;
+
+    font-family: inherit;
+    font-size: inherit;
+
+    cursor: pointer;
+
+    text-align: left;
+
+    transition: .3s;
+}
+
+.footer-nav-btn:hover {
+    color: #2563EB;
+}
+/* ===========================
+   FOOTER NAV BUTTON
+=========================== */
+
+.footer-nav-btn {
+    display: block !important;
+
+    width: auto !important;
+
+    padding: 0 !important;
+    margin: 0 0 16px 0 !important;
+
+    border: none !important;
+    outline: none !important;
+
+    background: transparent !important;
+
+    color: #D8E1F0 !important;
+
+    font-family: inherit !important;
+    font-size: 16px !important;
+    font-weight: 400 !important;
+
+    line-height: 1.5 !important;
+
+    text-align: left !important;
+
+    cursor: pointer;
+
+    opacity: 1 !important;
+    visibility: visible !important;
+
+    transition: color 0.3s ease;
+}
+
+.footer-nav-btn:hover {
+    color: #2563EB !important;
+}

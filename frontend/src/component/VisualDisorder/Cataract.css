@@ -1,0 +1,178 @@
+/* ==========================================
+   CATARACT SECTION
+========================================== */
+
+.cataract-section {
+    width: 100%;
+    padding: 40px 8% 80px;
+    background: #FFFFFF;
+}
+
+.cataract-container {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 280px 1fr;
+
+    gap: 50px;
+
+    align-items: start;
+}
+
+
+/* ==========================================
+   QUESTIONS
+========================================== */
+
+.cataract-questions {
+    display: flex;
+    flex-direction: column;
+
+    gap: 14px;
+
+    position: sticky;
+    top: 100px;
+}
+
+.cataract-questions a {
+    color: #475569;
+
+    text-decoration: none;
+
+    font-size: 16px;
+    font-weight: 400;
+
+    line-height: 1.6;
+
+    transition: 0.2s ease;
+}
+
+.cataract-questions a:hover {
+    color: #2563EB;
+}
+
+
+/* ==========================================
+   ANSWERS
+========================================== */
+
+.cataract-answers {
+    display: flex;
+    flex-direction: column;
+
+    gap: 45px;
+
+    border-left: 1px solid #E2E8F0;
+
+    padding-left: 50px;
+}
+
+.cataract-answer-item h2 {
+    margin: 0 0 20px;
+
+    color: #1E293B;
+
+    font-size: 24px;
+    font-weight: 600;
+
+    line-height: 1.4;
+}
+
+
+/* ==========================================
+   PARAGRAPHS
+========================================== */
+
+.cataract-answers p {
+    margin: 0 0 28px;
+
+    color: #334155;
+
+    font-size: 16px;
+
+    line-height: 1.8;
+}
+
+.cataract-answers p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* ==========================================
+   IMAGE
+========================================== */
+
+.cataract-content-image {
+    width: 100%;
+    max-width: 850px;
+
+    height: auto;
+
+    display: block;
+
+    margin: 0 0 30px;
+
+    border-radius: 12px;
+
+    border: 1px solid #E2E8F0;
+}
+
+
+/* ==========================================
+   CONTENT LINKS
+========================================== */
+
+.content-link {
+    color: #2563EB;
+
+    text-decoration: none;
+}
+
+.content-link:hover {
+    text-decoration: underline;
+}
+
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width: 768px) {
+
+    .cataract-section {
+        padding: 30px 20px 60px;
+    }
+
+    .cataract-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .cataract-questions {
+        position: static;
+
+        padding-bottom: 20px;
+
+        border-bottom: 1px solid #E2E8F0;
+    }
+
+    .cataract-answers {
+        border-left: none;
+        padding-left: 0;
+
+        gap: 35px;
+    }
+
+    .cataract-answers p {
+        font-size: 16px;
+    }
+
+    .cataract-answer-item h2 {
+        font-size: 21px;
+    }
+
+    .cataract-content-image {
+        max-width: 100%;
+    }
+}

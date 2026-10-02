@@ -1,0 +1,405 @@
+/* ==========================================
+   UDID SECTION
+========================================== */
+
+.udid-section{
+
+    padding:120px 8%;
+
+    background:#F8FAFC;
+
+}
+
+/* ==========================================
+   HEADER
+========================================== */
+
+.udid-header{
+
+    max-width:850px;
+
+    margin:auto;
+
+    text-align:center;
+
+}
+
+.udid-badge{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    padding:10px 22px;
+
+    border-radius:50px;
+
+    background:#EAF2FF;
+
+    color:#2563EB;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    margin-bottom:25px;
+
+}
+
+.udid-header h2{
+
+    font-size:52px;
+
+    font-weight:800;
+
+    color:#0F172A;
+
+    line-height:1.2;
+
+}
+
+.udid-header h2 span{
+
+    color:#2563EB;
+
+}
+
+.udid-header p{
+
+    margin-top:20px;
+
+    font-size:18px;
+
+    color:#64748B;
+
+    line-height:1.8;
+
+}
+
+/* ==========================================
+   HEADER
+========================================== */
+
+.section-header{
+
+    max-width:850px;
+
+    margin:auto;
+
+    text-align:center;
+
+}
+
+.section-badge{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    padding:10px 22px;
+
+    border-radius:50px;
+
+    background:#EAF2FF;
+
+    color:#2563EB;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    margin-bottom:25px;
+
+}
+
+.section-header h2{
+
+    font-size:52px;
+
+    font-weight:800;
+
+    color:#0F172A;
+
+    margin-bottom:20px;
+
+}
+
+.section-header p{
+
+    font-size:18px;
+
+    color:#64748B;
+
+    line-height:1.8;
+
+}
+
+/* ==========================================
+   TIMELINE
+========================================== */
+
+.udid-container{
+
+    max-width:950px;
+
+    margin:70px auto;
+
+}
+
+.timeline-item{
+
+    display:flex;
+
+    align-items:flex-start;
+
+    gap:30px;
+
+    position:relative;
+
+    padding-bottom:35px;
+
+}
+
+.timeline-item:last-child{
+
+    padding-bottom:0;
+
+}
+
+.timeline-item::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:22px;
+
+    top:50px;
+
+    width:2px;
+
+    height:100%;
+
+    background:#DBEAFE;
+
+}
+
+.timeline-item:last-child::before{
+
+    display:none;
+
+}
+
+.timeline-number{
+
+    width:46px;
+
+    height:46px;
+
+    border-radius:50%;
+
+    background:#2563EB;
+
+    color:#fff;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:18px;
+
+    font-weight:700;
+
+    flex-shrink:0;
+
+    z-index:2;
+
+}
+
+.timeline-content{
+
+    flex:1;
+
+    padding-bottom:12px;
+
+    border-bottom:1px solid #E5E7EB;
+
+}
+
+.timeline-content h3{
+
+    font-size:24px;
+
+    color:#0F172A;
+
+    margin-bottom:10px;
+
+}
+
+.timeline-content p{
+
+    font-size:16px;
+
+    color:#64748B;
+
+    line-height:1.8;
+
+}
+
+/* ==========================================
+   BOTTOM CTA
+========================================== */
+
+.udid-bottom{
+
+    max-width:1100px;
+
+    margin:80px auto 0;
+
+    padding:35px 45px;
+
+    background:#EFF6FF;
+
+    border-radius:22px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    gap:40px;
+
+}
+
+.bottom-content h3{
+
+    font-size:30px;
+
+    color:#0F172A;
+
+    margin-bottom:10px;
+
+}
+
+.bottom-content p{
+
+    color:#64748B;
+
+    line-height:1.8;
+
+}
+
+.guide-btn{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:16px 34px;
+
+    border-radius:14px;
+
+    text-decoration:none;
+
+    background:#2563EB;
+
+    color:#fff;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.guide-btn:hover{
+
+    background:#1D4ED8;
+
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media(max-width:768px){
+
+.udid-section{
+
+padding:90px 20px;
+
+}
+
+.section-header h2{
+
+font-size:34px;
+
+}
+
+.section-header p{
+
+font-size:16px;
+
+}
+
+.timeline-item{
+
+gap:20px;
+
+}
+
+.timeline-number{
+
+width:40px;
+
+height:40px;
+
+font-size:16px;
+
+}
+
+.timeline-content h3{
+
+font-size:20px;
+
+}
+
+.timeline-content p{
+
+font-size:15px;
+
+}
+
+.udid-bottom{
+
+flex-direction:column;
+
+text-align:center;
+
+padding:30px 20px;
+
+}
+
+.bottom-content h3{
+
+font-size:24px;
+
+}
+
+.guide-btn{
+
+width:100%;
+
+}
+
+}

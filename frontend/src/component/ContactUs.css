@@ -1,0 +1,323 @@
+/* ===========================
+   CONTACT SECTION
+=========================== */
+
+.contact-section {
+    padding: 120px 8% 90px;
+    background: #F8FAFC;
+    min-height: 100vh;
+}
+
+
+/* ===========================
+   HEADER
+=========================== */
+
+.contact-header {
+    max-width: 850px;
+    margin: auto;
+    text-align: center;
+}
+
+.contact-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+
+    padding: 10px 22px;
+
+    border-radius: 50px;
+
+    background: #EAF2FF;
+    color: #2563EB;
+
+    font-size: 15px;
+    font-weight: 600;
+
+    margin-bottom: 25px;
+}
+
+.contact-header h1 {
+    font-size: 52px;
+    font-weight: 800;
+
+    color: #0F172A;
+
+    line-height: 1.2;
+}
+
+.contact-header h1 span {
+    color: #2563EB;
+}
+
+.contact-header p {
+    margin-top: 20px;
+
+    font-size: 18px;
+
+    color: #64748B;
+
+    line-height: 1.8;
+}
+
+
+/* ===========================
+   CONTAINER
+=========================== */
+
+.contact-container {
+    max-width: 1100px;
+
+    margin: 70px auto 0;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 70px;
+
+    align-items: start;
+}
+
+
+/* ===========================
+   CONTACT INFO
+=========================== */
+
+.contact-info h2,
+.contact-form h2 {
+    font-size: 30px;
+
+    color: #0F172A;
+
+    margin-bottom: 15px;
+}
+
+.contact-info > p {
+    font-size: 16px;
+
+    color: #64748B;
+
+    line-height: 1.8;
+
+    margin-bottom: 35px;
+}
+
+.contact-item {
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+
+    margin-bottom: 28px;
+}
+
+.contact-icon {
+    width: 48px;
+    height: 48px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    border-radius: 14px;
+
+    background: #EAF2FF;
+
+    color: #2563EB;
+
+    font-size: 18px;
+}
+
+.contact-item h3 {
+    font-size: 17px;
+
+    color: #0F172A;
+
+    margin-bottom: 4px;
+}
+
+.contact-item p {
+    font-size: 15px;
+
+    color: #64748B;
+}
+
+
+/* ===========================
+   FORM
+=========================== */
+
+.contact-form {
+    padding-left: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    color: #374151;
+
+    margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+
+    padding: 14px 16px;
+
+    border: 1px solid #D1D5DB;
+
+    border-radius: 12px;
+
+    background: #FFFFFF;
+
+    font-family: inherit;
+
+    font-size: 15px;
+
+    color: #111827;
+
+    outline: none;
+
+    transition: .3s;
+
+    resize: vertical;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #2563EB;
+
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.08);
+}
+
+.contact-btn {
+    border: none;
+
+    padding: 14px 28px;
+
+    border-radius: 12px;
+
+    background: #2563EB;
+
+    color: #FFFFFF;
+
+    font-family: inherit;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: .3s;
+}
+
+.contact-btn:hover {
+    background: #1D4ED8;
+
+    transform: translateY(-2px);
+}
+
+
+/* ===========================
+   MOBILE
+=========================== */
+
+@media (max-width: 768px) {
+
+    .contact-section {
+        padding: 90px 20px 60px;
+    }
+
+    .contact-header h1 {
+        font-size: 34px;
+    }
+
+    .contact-header p {
+        font-size: 16px;
+    }
+
+    .contact-container {
+        grid-template-columns: 1fr;
+
+        gap: 45px;
+
+        margin-top: 50px;
+    }
+
+    .contact-info h2,
+    .contact-form h2 {
+        font-size: 24px;
+    }
+
+    .contact-form {
+        padding-left: 0;
+    }
+}
+/* ===========================
+   SUCCESS MESSAGE
+=========================== */
+
+.success-message {
+    text-align: center;
+
+    padding: 45px 30px;
+
+    background: #EFF6FF;
+
+    border-radius: 20px;
+
+    border: 1px solid #DBEAFE;
+}
+
+.success-icon {
+    width: 65px;
+    height: 65px;
+
+    margin: 0 auto 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #2563EB;
+
+    color: #FFFFFF;
+
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.success-message h2 {
+    color: #0F172A;
+
+    font-size: 26px;
+
+    margin-bottom: 12px;
+}
+
+.success-message p {
+    color: #64748B;
+
+    font-size: 15px;
+
+    line-height: 1.8;
+
+    margin: 0;
+}

@@ -1,0 +1,172 @@
+/* ==========================================
+   SPINAL CORD INJURY
+========================================== */
+
+.spinal-cord-injury-section {
+    width: 100%;
+    padding: 40px 8% 80px;
+
+    background: #FFFFFF;
+}
+
+.spinal-cord-injury-container {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 280px 1fr;
+
+    gap: 50px;
+
+    align-items: start;
+}
+
+
+/* ==========================================
+   QUESTIONS
+========================================== */
+
+.spinal-cord-injury-questions {
+    display: flex;
+    flex-direction: column;
+
+    gap: 14px;
+
+    position: sticky;
+    top: 100px;
+}
+
+.spinal-cord-injury-questions a {
+    display: block;
+
+    color: #475569;
+
+    text-decoration: none;
+
+    font-size: 16px;
+    font-weight: 400;
+
+    line-height: 1.6;
+
+    padding: 0;
+
+    transition: 0.2s ease;
+}
+
+.spinal-cord-injury-questions a:hover {
+    color: #2563EB;
+}
+
+
+/* ==========================================
+   ANSWERS
+========================================== */
+
+.spinal-cord-injury-answers {
+    display: flex;
+    flex-direction: column;
+
+    gap: 45px;
+
+    border-left: 1px solid #E2E8F0;
+
+    padding-left: 50px;
+}
+
+
+/* ==========================================
+   ANSWER ITEM
+========================================== */
+
+.spinal-cord-injury-answer-item {
+    scroll-margin-top: 100px;
+}
+
+.spinal-cord-injury-answer-item h2 {
+    margin: 0 0 20px;
+
+    color: #334155;
+
+    font-size: 22px;
+    font-weight: 500;
+
+    line-height: 1.4;
+}
+
+/* ==========================================
+   CONTENT
+========================================== */
+
+.spinal-cord-injury-answer-item p {
+    margin: 0 0 28px;
+
+    color: #334155;
+
+    font-size: 16px;
+
+    line-height: 1.8;
+}
+
+.spinal-cord-injury-answer-item p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* ==========================================
+   LINKS
+========================================== */
+
+.spinal-cord-injury-answer-item a {
+    color: #2563EB;
+
+    text-decoration: none;
+}
+
+.spinal-cord-injury-answer-item a:hover {
+    text-decoration: underline;
+}
+
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width: 768px) {
+
+    .spinal-cord-injury-section {
+        padding: 30px 20px 60px;
+    }
+
+    .spinal-cord-injury-container {
+        grid-template-columns: 1fr;
+
+        gap: 30px;
+    }
+
+    .spinal-cord-injury-questions {
+        position: static;
+
+        padding-bottom: 20px;
+
+        border-bottom: 1px solid #E2E8F0;
+    }
+
+    .spinal-cord-injury-answers {
+        border-left: none;
+
+        padding-left: 0;
+
+        gap: 35px;
+    }
+
+    .spinal-cord-injury-answer-item h2 {
+        font-size: 21px;
+        font-weight: 500;
+    }
+
+    .spinal-cord-injury-answer-item p {
+        font-size: 16px;
+
+        line-height: 1.7;
+    }
+}

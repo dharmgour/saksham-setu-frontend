@@ -1,0 +1,186 @@
+/* ==========================================
+   GLAUCOMA SECTION
+========================================== */
+
+.glaucoma-section {
+    width: 100%;
+    padding: 40px 8% 80px;
+    background: #FFFFFF;
+}
+
+.glaucoma-container {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 280px 1fr;
+
+    gap: 50px;
+
+    align-items: start;
+}
+
+
+/* ==========================================
+   QUESTIONS
+========================================== */
+
+.glaucoma-questions {
+    display: flex;
+    flex-direction: column;
+
+    gap: 14px;
+
+    position: sticky;
+    top: 100px;
+}
+
+.glaucoma-questions a {
+    color: #475569;
+
+    text-decoration: none;
+
+    font-size: 16px;
+    font-weight: 400;
+
+    line-height: 1.6;
+
+    transition: 0.2s ease;
+}
+
+.glaucoma-questions a:hover {
+    color: #2563EB;
+}
+
+
+/* ==========================================
+   ANSWERS
+========================================== */
+
+.glaucoma-answers {
+    display: flex;
+    flex-direction: column;
+
+    gap: 45px;
+
+    border-left: 1px solid #E2E8F0;
+
+    padding-left: 50px;
+}
+
+.glaucoma-answer-item h2 {
+    margin: 0 0 20px;
+
+    color: #1E293B;
+
+    font-size: 24px;
+    font-weight: 600;
+
+    line-height: 1.4;
+}
+
+
+/* ==========================================
+   PARAGRAPHS
+========================================== */
+
+.glaucoma-answers p {
+    margin: 0 0 28px;
+
+    color: #334155;
+
+    font-size: 16px;
+
+    line-height: 1.8;
+}
+
+.glaucoma-answers p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* ==========================================
+   CONTENT IMAGE
+========================================== */
+
+/* ==========================================
+   CONTENT IMAGE
+========================================== */
+
+.glaucoma-content-image {
+    width: 100%;
+    max-width: 400px;   /* image chhoti */
+    height: auto;
+
+    display: block;
+
+    margin: 0 auto 30px;
+
+    border-radius: 12px;
+
+    border: 1px solid #E2E8F0;
+}
+
+
+/* ==========================================
+   CONTENT LINKS
+========================================== */
+
+.content-link {
+    color: #2563EB;
+
+    text-decoration: none;
+}
+
+.content-link:hover {
+    text-decoration: underline;
+}
+
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width: 768px) {
+
+    .glaucoma-section {
+        padding: 30px 20px 60px;
+    }
+
+    .glaucoma-container {
+        grid-template-columns: 1fr;
+
+        gap: 30px;
+    }
+
+    .glaucoma-questions {
+        position: static;
+
+        gap: 10px;
+
+        padding-bottom: 20px;
+
+        border-bottom: 1px solid #E2E8F0;
+    }
+
+    .glaucoma-answers {
+        border-left: none;
+
+        padding-left: 0;
+
+        gap: 35px;
+    }
+
+    .glaucoma-answers p {
+        font-size: 16px;
+    }
+
+    .glaucoma-answer-item h2 {
+        font-size: 21px;
+    }
+
+   .glaucoma-content-image {
+    width: 100%;
+    max-width: 300px;
+}
+}
