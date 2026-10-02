@@ -1,5 +1,5 @@
 import { Routes, Route, useLocation } from "react-router-dom";
-import Header from "./Component/Header";
+import Header from "./component/Header";
 import LandingPage from "./pages/Landing";
 
 import SpeechDisability from "./pages/Speech/SpeechDisability";
@@ -7,9 +7,9 @@ import VisualDisability from "./pages/Visual/VisualDisability";
 import HearingDisability from "./pages/Hearing/HearingDisability";
 import MobilityDisability from "./pages/Mobility/MobilityDisability";
 import IntellectualDisability from "./pages/Intellectual/IntellectualDisability";
-import UDIDCard from "./Component/UDIDCard";
-import AboutUs from "./Component/AboutUs";
-import ContactUs from "./Component/ContactUs";
+import UDIDCard from "./component/UDIDCard";
+import AboutUs from "./component/AboutUs";
+import ContactUs from "./component/ContactUs";
 function App() {
   const location = useLocation();
 
