@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./Header.css";
 import logo from "../assets/logo.png";
+
 import {
   FaBars,
   FaTimes,
@@ -18,6 +19,9 @@ const Header = () => {
   const handleNGOClick = () => {
     navigate("/");
 
+    setMenuOpen(false);
+    setDropdownOpen(false);
+
     setTimeout(() => {
       document.getElementById("ngos")?.scrollIntoView({
         behavior: "smooth",
@@ -25,10 +29,22 @@ const Header = () => {
     }, 100);
   };
 
+  const handleMobileDropdown = () => {
+    setDropdownOpen((prev) => !prev);
+  };
+
+  const handleLinkClick = () => {
+    setMenuOpen(false);
+    setDropdownOpen(false);
+  };
+
   return (
     <header className="header">
 
-      {/* Logo */}
+      {/* ===========================
+          LOGO
+      =========================== */}
+
       <div className="logo">
 
         <img
@@ -48,29 +64,66 @@ const Header = () => {
       </div>
 
 
-      {/* Navigation */}
+      {/* ===========================
+          NAVIGATION
+      =========================== */}
+
       <nav className={menuOpen ? "navbar active" : "navbar"}>
 
-        <Link to="/">
+        {/* HOME */}
+
+        <Link
+          to="/"
+          onClick={handleLinkClick}
+        >
           Home
         </Link>
 
 
-        {/* Disabilities Dropdown */}
+        {/* ===========================
+            DISABILITIES DROPDOWN
+        =========================== */}
+
         <div
           className="dropdown"
-          onMouseEnter={() => setDropdownOpen(true)}
-          onMouseLeave={() => setDropdownOpen(false)}
+
+          onMouseEnter={() => {
+            if (window.innerWidth > 992) {
+              setDropdownOpen(true);
+            }
+          }}
+
+          onMouseLeave={() => {
+            if (window.innerWidth > 992) {
+              setDropdownOpen(false);
+            }
+          }}
         >
 
-          <button className="drop-btn">
+          <button
+            type="button"
+            className="drop-btn"
+
+            onClick={handleMobileDropdown}
+          >
 
             Disabilities
 
-            <FaChevronDown className="arrow" />
+            <FaChevronDown
+              className="arrow"
+              style={{
+                transform: dropdownOpen
+                  ? "rotate(180deg)"
+                  : "rotate(0deg)",
+
+                transition: "0.3s",
+              }}
+            />
 
           </button>
 
+
+          {/* DROPDOWN OPTIONS */}
 
           <div
             className={
@@ -80,23 +133,38 @@ const Header = () => {
             }
           >
 
-            <Link to="/disability/visual">
+            <Link
+              to="/disability/visual"
+              onClick={handleLinkClick}
+            >
               Visual Impairment
             </Link>
 
-            <Link to="/disability/hearing">
+            <Link
+              to="/disability/hearing"
+              onClick={handleLinkClick}
+            >
               Hearing Impairment
             </Link>
 
-            <Link to="/disability/mobility">
+            <Link
+              to="/disability/mobility"
+              onClick={handleLinkClick}
+            >
               Mobility Impairment
             </Link>
 
-            <Link to="/disability/speech">
+            <Link
+              to="/disability/speech"
+              onClick={handleLinkClick}
+            >
               Speech Impairment
             </Link>
 
-            <Link to="/disability/intellectual">
+            <Link
+              to="/disability/intellectual"
+              onClick={handleLinkClick}
+            >
               Intellectual Disability
             </Link>
 
@@ -105,14 +173,24 @@ const Header = () => {
         </div>
 
 
-        {/* UDID Card */}
-        <Link to="/udid-card">
+        {/* ===========================
+            UDID CARD
+        =========================== */}
+
+        <Link
+          to="/udid-card"
+          onClick={handleLinkClick}
+        >
           UDID Card
         </Link>
 
 
-        {/* NGOs */}
+        {/* ===========================
+            NGOs
+        =========================== */}
+
         <button
+          type="button"
           className="ngo-nav-btn"
           onClick={handleNGOClick}
         >
@@ -120,33 +198,75 @@ const Header = () => {
         </button>
 
 
-        <Link to="/about">
+        {/* ===========================
+            ABOUT US
+        =========================== */}
+
+        <Link
+          to="/about"
+          onClick={handleLinkClick}
+        >
           About Us
         </Link>
 
-       <Link to="/contact">
-  Contact Us
-</Link>
+
+        {/* ===========================
+            CONTACT US
+        =========================== */}
+
+        <Link
+          to="/contact"
+          onClick={handleLinkClick}
+        >
+          Contact Us
+        </Link>
 
 
-        {/* Mobile Button */}
-        <button className="mobile-btn">
+        {/* ===========================
+            MOBILE EXPLORE BUTTON
+        =========================== */}
+
+        <button
+          type="button"
+          className="mobile-btn"
+          onClick={() => {
+            setMenuOpen(false);
+            navigate("/");
+          }}
+        >
           Explore Resources
         </button>
 
       </nav>
 
 
-      {/* Desktop Button */}
-      <button className="explore-btn">
+      {/* ===========================
+          DESKTOP EXPLORE BUTTON
+      =========================== */}
+
+      <button
+        type="button"
+        className="explore-btn"
+        onClick={() => navigate("/")}
+      >
         Explore Resources
       </button>
 
 
-      {/* Hamburger */}
+      {/* ===========================
+          MOBILE HAMBURGER
+      =========================== */}
+
       <div
         className="menu-icon"
-        onClick={() => setMenuOpen(!menuOpen)}
+        onClick={() => {
+          setMenuOpen((prev) => !prev);
+
+          // Close dropdown when mobile menu closes
+          if (menuOpen) {
+            setDropdownOpen(false);
+          }
+        }}
       >
 
         {menuOpen ? <FaTimes /> : <FaBars />}
